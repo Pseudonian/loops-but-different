@@ -23,7 +23,6 @@ function getSpeedMult(zone = curTown) {
 
     /* Since v0.95, you now get a speed multiplier from the SPD stat. */
     speedMult *= (1 + 0.2 * getLevel('Spd'))
-    console.log(speedMult + " is your current Speed Multiplier!")
     return speedMult;
 }
 
