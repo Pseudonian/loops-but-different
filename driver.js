@@ -22,7 +22,7 @@ function getSpeedMult(zone = curTown) {
     speedMult *= Math.pow(1 + getSkillLevel("Chronomancy") / 60, 0.25);
 
     /* Since v0.95, you now get a speed multiplier from the SPD stat. */
-    speedMult *= (1 + 0.2 * getLevel('Spd'))
+    speedMult *= (1 + 0.2 * getLevel('Spd') + 0.04 * getTalent('Spd'))
     return speedMult;
 }
 
